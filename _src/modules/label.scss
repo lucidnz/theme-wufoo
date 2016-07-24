@@ -1,3 +1,14 @@
+label {
+  display: block;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  + label {
+    display: inline-block;
+  }
+}
+
 label.desc, legend.desc {
   padding-bottom: 0;
   border: none;
@@ -9,5 +20,6 @@ label.desc, legend.desc {
 }
 
 .req {
+  display: inline !important;
   color: $required_color;
 }

@@ -258,12 +258,13 @@ textarea {
   max-width: 100%;
   resize: vertical; }
 
-input[type=text],
+input[type=text], input[class~=text],
 input[type=email],
 input[type=password],
 input[type=url],
 input[type=tel],
 input[type=text],
+input[class~=text],
 input[type=number],
 input[type=search],
 input[type=time],
@@ -282,12 +283,13 @@ select {
   outline: none;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
-  input[type=text]:focus,
+  input[type=text]:focus, input[class~=text]:focus,
   input[type=email]:focus,
   input[type=password]:focus,
   input[type=url]:focus,
   input[type=tel]:focus,
   input[type=text]:focus,
+  input[class~=text]:focus,
   input[type=number]:focus,
   input[type=search]:focus,
   input[type=time]:focus,
@@ -304,12 +306,13 @@ select {
     border-color: #a36338;
     box-shadow: 0 0 6px rgba(163, 99, 56, 0.6); }
 
-input[type=text],
+input[type=text], input[class~=text],
 input[type=email],
 input[type=password],
 input[type=url],
 input[type=tel],
 input[type=text],
+input[class~=text],
 input[type=number],
 input[type=search],
 input[type=time],
@@ -326,12 +329,13 @@ textarea {
   display: block;
   padding: 0.25rem 0.5em; }
 
-input[type=text],
+input[type=text], input[class~=text],
 input[type=email],
 input[type=password],
 input[type=url],
 input[type=tel],
 input[type=text],
+input[class~=text],
 input[type=number],
 input[type=range],
 textarea {
@@ -497,6 +501,7 @@ body:after {
   list-style: none; }
 
 .wufoo > ul > li {
+  clear: both;
   padding: 1rem 2.5%;
   margin-left: -2.5%;
   margin-right: -2.5%; }
@@ -512,11 +517,96 @@ body:after {
       margin-right: -1em;
       padding: 1rem 1em; } }
 
+.wufoo span {
+  display: block; }
+
+.wufoo li > span {
+  float: left;
+  margin-top: 0.5rem;
+  margin-right: 0.5em; }
+  .wufoo li > span input {
+    width: auto;
+    margin-right: 0.5em; }
+
 .wufoo div > span {
-  display: block;
   margin-top: 0.5rem; }
-  .wufoo div > span label {
+  .wufoo div > span:first-child {
     margin-top: 0; }
+
+.wufoo span label {
+  margin-top: 0; }
+
+.complex > div {
+  margin-left: -0.125em;
+  margin-right: -0.125em;
+  margin-top: 0; }
+  .complex > div:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media (min-width: 48em) {
+    .complex > div {
+      margin-left: -0.25em;
+      margin-right: -0.25em; } }
+  @media (min-width: 60em) {
+    .complex > div {
+      margin-left: -0.375em;
+      margin-right: -0.375em; } }
+  @media (min-width: 75em) {
+    .complex > div {
+      margin-left: -0.5em;
+      margin-right: -0.5em; } }
+  @media (min-width: 93.75em) {
+    .complex > div {
+      margin-left: -0.5em;
+      margin-right: -0.5em; } }
+  .complex > div > * {
+    margin-top: 0; }
+
+.complex .full,
+.complex .left,
+.complex .right {
+  float: left;
+  width: 100%;
+  padding-left: 0.125em;
+  padding-right: 0.125em;
+  margin-top: 1rem; }
+  @media (min-width: 48em) {
+    .complex .full,
+    .complex .left,
+    .complex .right {
+      padding-left: 0.25em;
+      padding-right: 0.25em; } }
+  @media (min-width: 60em) {
+    .complex .full,
+    .complex .left,
+    .complex .right {
+      padding-left: 0.375em;
+      padding-right: 0.375em; } }
+  @media (min-width: 75em) {
+    .complex .full,
+    .complex .left,
+    .complex .right {
+      padding-left: 0.5em;
+      padding-right: 0.5em; } }
+  @media (min-width: 93.75em) {
+    .complex .full,
+    .complex .left,
+    .complex .right {
+      padding-left: 0.5em;
+      padding-right: 0.5em; } }
+
+@media (min-width: 48em) {
+  .complex .left,
+  .complex .right {
+    width: 50%; } }
+
+label {
+  display: block; }
+
+input[type=checkbox] + label,
+input[type=radio] + label {
+  display: inline-block; }
 
 label.desc, legend.desc {
   padding-bottom: 0;
@@ -526,29 +616,15 @@ label.desc, legend.desc {
     margin-top: 0.5rem; }
 
 .req {
+  display: inline !important;
   color: red; }
 
-/*
-input[type=text],
-input[type=email],
-input[type=password],
-input[type=url],
-input[type=tel],
-input[type=text],
-input[type=number],
-input[type=range],
-textarea {
-  @media (min-width: $breakpoint_sm) {
-    width: 70%;
-  }
-}
-textarea {
-  @media (min-width: $breakpoint_sm) {
-    min-width: 70%;
-    max-width: 70%;
-  }
-}
-*/
+input {
+  display: inline-block !important; }
+
+select {
+  display: block; }
+
 input[type="submit"] {
   color: #1c1d1d;
   background-color: #d8d9da;

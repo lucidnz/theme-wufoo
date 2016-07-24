@@ -7,6 +7,7 @@
     @include list-unstyled;
   }
   > ul > li {
+    clear: both;
     padding: $gutter_horizontal (100% - $container_width_xs)/2;
     margin-left: -(100% - $container_width_xs)/2;
     margin-right: -(100% - $container_width_xs)/2;
@@ -24,11 +25,42 @@
       padding: $gutter_horizontal $gutter_vertical;
     }
   }
-  div > span {
+  span {
     display: block;
+  }
+  li > span {
+    float: left;
     margin-top: $gutter_horizontal/2;
-    label {
+    margin-right: $gutter_vertical/2;
+    
+    input {
+      width: auto;
+      margin-right: $gutter_vertical/2;
+    }
+  }
+  div > span {
+    margin-top: $gutter_horizontal/2;
+    &:first-child {
       margin-top: 0;
     }
+  }
+  span label {
+    margin-top: 0;
+  }
+}
+
+.complex {
+  > div {
+    @include grid-row;
+  }
+  .full,
+  .left,
+  .right {
+    @include grid-col;
+    margin-top: $gutter_horizontal;
+  }
+  .left,
+  .right {
+    @include grid-col-size(50%, $breakpoint_sm);
   }
 }
