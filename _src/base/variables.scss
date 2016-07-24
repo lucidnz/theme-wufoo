@@ -1,0 +1,16 @@
+$include_classes: false;
+$include_fluid_type: false;
+
+$breakpoint_sm: 48em;
+
+$highlight_color: #a36338;
+$text_color: #1c1d1d;
+$focus_bg: #fff7c0;
+$required_color: red;
+$instruct_bg: lighten(#eee, 5%);
+
+$border_radius: 0;
+
+$background_color_button_primary: #d8d9da;
+$background_hover_color_button_primary: lighten(#d8d9da, 10%);
+$text_color_button_primary: $text_color;

@@ -1,0 +1,13 @@
+label.desc, legend.desc {
+  padding-bottom: 0;
+  border: none;
+  font-weight: bold;
+  
+  + * {
+    margin-top: $gutter_horizontal/2;
+  }
+}
+
+.req {
+  color: $required_color;
+}

@@ -1,0 +1,21 @@
+/*
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=url],
+input[type=tel],
+input[type=text],
+input[type=number],
+input[type=range],
+textarea {
+  @media (min-width: $breakpoint_sm) {
+    width: 70%;
+  }
+}
+textarea {
+  @media (min-width: $breakpoint_sm) {
+    min-width: 70%;
+    max-width: 70%;
+  }
+}
+*/

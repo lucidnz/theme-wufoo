@@ -1,0 +1,34 @@
+#container {
+  @include container;
+}
+
+.wufoo {
+  > ul {
+    @include list-unstyled;
+  }
+  > ul > li {
+    padding: $gutter_horizontal (100% - $container_width_xs)/2;
+    margin-left: -(100% - $container_width_xs)/2;
+    margin-right: -(100% - $container_width_xs)/2;
+    
+    @media (min-width: $breakpoint_sm) {
+      position: relative;
+      width: 70%;
+      margin-left: -(100% - $container_width_sm)/2;
+      margin-right: -(100% - $container_width_sm)/2;
+    }
+    
+    @media (min-width: $breakpoint_md) {
+      margin-left: -$gutter_vertical;
+      margin-right: -$gutter_vertical;
+      padding: $gutter_horizontal $gutter_vertical;
+    }
+  }
+  div > span {
+    display: block;
+    margin-top: $gutter_horizontal/2;
+    label {
+      margin-top: 0;
+    }
+  }
+}

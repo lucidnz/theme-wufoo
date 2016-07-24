@@ -1,0 +1,14 @@
+.instruct {
+  padding: ($gutter_horizontal/2) ($gutter_vertical/2);
+  border: $border_color $border_size $border_style;
+  border-radius: $border_radius;
+  background-color: $instruct_bg;
+  
+  @media (min-width: $breakpoint_sm) {
+    position: absolute;
+    top: 0;
+    left: 103%;
+    width: 40%;
+    margin-top: 0;
+  }
+}
