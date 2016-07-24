@@ -1,0 +1,35 @@
+{
+  "name": "lucid-wufootheme",
+  "version": "1.0.0",
+  "description": "Theme kit for Wufoo forms by Lucid",
+  "main": "index.html",
+  "scripts": {
+    "build": "parallelshell 'npm run sync' 'npm run css:watch'",
+    "sync": "browser-sync start -s --files './css' './index.html'",
+    "css:watch": "watch 'npm run css' ./_src/",
+    "css": "node-sass ./_src/styles.scss | postcss --use autoprefixer -o ./css/styles.css",
+    "postcss": "cssmin ./css/styles.css > ./css/styles.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luciddesign/theme-wufoo.git"
+  },
+  "author": "@stewartknapman @lucid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luciddesign/theme-wufoo/issues"
+  },
+  "homepage": "https://github.com/luciddesign/theme-wufoo#readme",
+  "dependencies": {
+    "inside-scss": "0.0.10"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "browser-sync": "^2.13.0",
+    "cssmin": "^0.4.3",
+    "node-sass": "^3.8.0",
+    "parallelshell": "^2.0.0",
+    "postcss-cli": "^2.5.2",
+    "watch": "^0.19.1"
+  }
+}
