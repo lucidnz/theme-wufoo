@@ -516,21 +516,26 @@ body:after {
     body:after {
       content: "xl"; } }
 
-#container {
+#container,
+.embed #container {
   margin-left: auto;
   margin-right: auto;
   width: 95%; }
   @media (min-width: 48em) {
-    #container {
+    #container,
+    .embed #container {
       width: 95%; } }
   @media (min-width: 60em) {
-    #container {
+    #container,
+    .embed #container {
       width: 90%; } }
   @media (min-width: 75em) {
-    #container {
+    #container,
+    .embed #container {
       width: 85%; } }
   @media (min-width: 93.75em) {
-    #container {
+    #container,
+    .embed #container {
       width: 80%; } }
 
 .wufoo {

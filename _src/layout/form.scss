@@ -1,4 +1,5 @@
-#container {
+#container,
+.embed #container {
   @include container;
 }
 
