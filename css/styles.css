@@ -661,7 +661,7 @@ body:after {
     .complex .right {
       width: 50% !important; } }
 
-.info h2 {
+.wufoo .info h2 {
   font-weight: bold; }
 
 label {
@@ -731,5 +731,5 @@ form .instruct {
       margin: 0; } }
 
 .focused {
-  background-color: #fff7c0 !important; }
+  background-color: #e5e6e7 !important; }
 
