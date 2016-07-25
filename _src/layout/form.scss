@@ -1,6 +1,28 @@
+@mixin build-containers-important ($breakpoint_key, $breakpoint) {
+  @each $container in $container_sizes {
+    @include build-container-important (nth($container, 1), nth($container, 2), $breakpoint_key, $breakpoint);
+  }
+}
+
+@mixin build-container-important ($container_key, $container_size, $breakpoint_key, $breakpoint) {
+  @if ($container_key == $breakpoint_key) {
+    @if ($breakpoint) {
+      @media (min-width: $breakpoint) {
+        width: $container_size !important;
+      }
+    } @else {
+      width: $container_size !important;
+    }
+  }
+}
+
 #container,
 .embed #container {
   @include container;
+  
+  @each $breakpoint in $breakpoint_sizes {
+    @include build-containers-important (nth($breakpoint, 1), nth($breakpoint, 2));
+  }
 }
 
 .wufoo {

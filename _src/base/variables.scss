@@ -3,6 +3,10 @@ $include_fluid_type: false;
 
 $breakpoint_sm: 48em;
 
+$font_family_serif: Baskerville,"Baskerville Old Face","Hoefler Text",Garamond,"Times New Roman",serif;
+$font_family_body: $font_family_serif;
+$font_family_headings: $font_family_serif;
+
 $highlight_color: #a36338;
 $text_color: #1c1d1d;
 $focus_bg: #fff7c0;

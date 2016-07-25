@@ -147,7 +147,7 @@ svg {
 body {
   font-size: 1em;
   line-height: 1.5;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-weight: 300;
   color: #1c1d1d;
   -webkit-transition: font-size 0.3s;
@@ -160,7 +160,7 @@ h4,
 h5,
 h6 {
   color: currentColor;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-weight: 500; }
 
 h1 {
@@ -402,7 +402,7 @@ button {
   margin-top: 0;
   padding: 0.25rem 0.66667em;
   -webkit-appearance: none;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-weight: 300;
   font-size: 1em;
   line-height: 1.5;
@@ -520,7 +520,8 @@ body:after {
 .embed #container {
   margin-left: auto;
   margin-right: auto;
-  width: 95%; }
+  width: 95%;
+  width: 95% !important; }
   @media (min-width: 48em) {
     #container,
     .embed #container {
@@ -537,6 +538,22 @@ body:after {
     #container,
     .embed #container {
       width: 80%; } }
+  @media (min-width: 48em) {
+    #container,
+    .embed #container {
+      width: 95% !important; } }
+  @media (min-width: 60em) {
+    #container,
+    .embed #container {
+      width: 90% !important; } }
+  @media (min-width: 75em) {
+    #container,
+    .embed #container {
+      width: 85% !important; } }
+  @media (min-width: 93.75em) {
+    #container,
+    .embed #container {
+      width: 80% !important; } }
 
 .wufoo {
   margin-top: 1rem !important; }
@@ -643,6 +660,9 @@ body:after {
     .complex .left,
     .complex .right {
       width: 50% !important; } }
+
+.info h2 {
+  font-weight: bold; }
 
 label {
   display: block; }
