@@ -19,7 +19,6 @@ label.desc, legend.desc {
   }
 }
 
-.req {
-  display: inline !important;
-  color: $required_color;
+form span.req {
+  color: $required_color !important;
 }

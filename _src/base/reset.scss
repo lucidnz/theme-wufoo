@@ -1,0 +1,40 @@
+html,
+#container,
+#header,
+form.wufoo,
+form li.section h3,
+form li.section div {
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+.info div,
+form li div,
+form li.section h3,
+form li.section div,
+form li div label,
+form li span label {
+  font-size: 100%;
+  line-height: 1.5;
+  color: inherit;
+}
+
+.wufoo,
+input.text, input.search, input.file, textarea.textarea, select.select {
+  font-family: inherit;
+  letter-spacing: inherit;
+}
+
+input.text, input.search, textarea.textarea {
+  background-image: none;
+}
+
+label.choice,
+input.checkbox,
+input.radio {
+  margin: 0;
+  padding: 0;
+}

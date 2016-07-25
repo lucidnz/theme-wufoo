@@ -9,3 +9,11 @@ input {
 select {
   display: block;
 }
+
+input.text, input.search, input.file, textarea.textarea, select.select {
+  padding: $gutter_horizontal/4 $gutter_vertical/2
+}
+
+input.text, input.search, textarea.textarea {
+  border: $border_color $border_size $border_style;
+}

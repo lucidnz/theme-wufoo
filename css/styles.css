@@ -1,3 +1,39 @@
+html,
+#container,
+#header,
+form.wufoo,
+form li.section h3,
+form li.section div {
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: none; }
+
+.info div,
+form li div,
+form li.section h3,
+form li.section div,
+form li div label,
+form li span label {
+  font-size: 100%;
+  line-height: 1.5;
+  color: inherit; }
+
+.wufoo,
+input.text, input.search, input.file, textarea.textarea, select.select {
+  font-family: inherit;
+  letter-spacing: inherit; }
+
+input.text, input.search, textarea.textarea {
+  background-image: none; }
+
+label.choice,
+input.checkbox,
+input.radio {
+  margin: 0;
+  padding: 0; }
+
 /*
   TODO:
   - navs
@@ -496,45 +532,43 @@ body:after {
     #container {
       width: 80%; } }
 
-.wufoo > ul {
-  padding: 0;
-  list-style: none; }
-
-.wufoo > ul > li {
-  clear: both;
-  padding: 1rem 2.5%;
-  margin-left: -2.5%;
-  margin-right: -2.5%; }
-  @media (min-width: 48em) {
-    .wufoo > ul > li {
-      position: relative;
-      width: 70%;
-      margin-left: -2.5%;
-      margin-right: -2.5%; } }
-  @media (min-width: 60em) {
-    .wufoo > ul > li {
-      margin-left: -1em;
-      margin-right: -1em;
-      padding: 1rem 1em; } }
-
-.wufoo span {
-  display: block; }
-
-.wufoo li > span {
-  float: left;
-  margin-top: 0.5rem;
-  margin-right: 0.5em; }
-  .wufoo li > span input {
+.wufoo {
+  margin-top: 1rem !important; }
+  .wufoo > ul {
+    padding: 0;
+    list-style: none; }
+  .wufoo > ul > li {
+    clear: both;
     width: auto;
+    padding: 1rem 2.5%;
+    margin-left: -2.5%;
+    margin-right: -2.5%; }
+    @media (min-width: 48em) {
+      .wufoo > ul > li {
+        position: relative;
+        width: 70%;
+        margin-left: -2.5%;
+        margin-right: -2.5%; } }
+    @media (min-width: 60em) {
+      .wufoo > ul > li {
+        margin-left: -1em;
+        margin-right: -1em;
+        padding: 1rem 1em; } }
+  .wufoo span {
+    display: block; }
+  .wufoo li > span {
+    float: left;
+    margin-top: 0.5rem;
     margin-right: 0.5em; }
-
-.wufoo div > span {
-  margin-top: 0.5rem; }
-  .wufoo div > span:first-child {
+    .wufoo li > span input {
+      width: auto;
+      margin-right: 0.33333em; }
+  .wufoo div > span {
+    margin-top: 0.5rem; }
+    .wufoo div > span:first-child {
+      margin-top: 0; }
+  .wufoo span label {
     margin-top: 0; }
-
-.wufoo span label {
-  margin-top: 0; }
 
 .complex > div {
   margin-left: -0.125em;
@@ -596,10 +630,13 @@ body:after {
       padding-left: 0.5em;
       padding-right: 0.5em; } }
 
-@media (min-width: 48em) {
-  .complex .left,
-  .complex .right {
-    width: 50%; } }
+.complex .left,
+.complex .right {
+  width: 100% !important; }
+  @media (min-width: 48em) {
+    .complex .left,
+    .complex .right {
+      width: 50% !important; } }
 
 label {
   display: block; }
@@ -615,15 +652,20 @@ label.desc, legend.desc {
   label.desc + *, legend.desc + * {
     margin-top: 0.5rem; }
 
-.req {
-  display: inline !important;
-  color: red; }
+form span.req {
+  color: red !important; }
 
 input {
   display: inline-block !important; }
 
 select {
   display: block; }
+
+input.text, input.search, input.file, textarea.textarea, select.select {
+  padding: 0.25rem 0.5em; }
+
+input.text, input.search, textarea.textarea {
+  border: #eee 1px solid; }
 
 input[type="submit"] {
   color: #1c1d1d;
@@ -634,26 +676,32 @@ input[type="submit"] {
     background-color: #f2f3f3;
     border-color: #b1b3b5; }
 
-.section {
+form li.section {
   width: 100% !important;
   margin-top: 1rem;
   margin-left: 0 !important;
   padding-left: 0 !important;
   border-top: #eee 1px solid; }
 
-.instruct {
-  padding: 0.5rem 0.5em;
-  border: #eee 1px solid;
-  border-radius: 0;
-  background-color: #fbfbfb; }
+h3 {
+  font-weight: bold !important; }
+
+form .instruct {
+  position: static;
+  margin: 1rem 0 0;
+  padding: 0.5rem 0.5em !important;
+  width: 100%;
+  border: #eee 1px solid !important;
+  border-radius: 0 !important;
+  background-color: #fbfbfb !important; }
   @media (min-width: 48em) {
-    .instruct {
+    form .instruct {
       position: absolute;
       top: 0;
-      left: 103%;
-      width: 40%;
-      margin-top: 0; } }
+      left: 103% !important;
+      width: 43%;
+      margin: 0; } }
 
 .focused {
-  background-color: #fff7c0; }
+  background-color: #fff7c0 !important; }
 
