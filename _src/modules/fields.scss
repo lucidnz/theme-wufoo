@@ -16,4 +16,8 @@ input.text, input.search, input.file, textarea.textarea, select.select {
 
 input.text, input.search, textarea.textarea {
   border: $border_color $border_size $border_style;
+  &:focus,
+  &:active {
+    border-color: $highlight_color;
+  }
 }

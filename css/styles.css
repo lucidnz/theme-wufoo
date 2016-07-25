@@ -3,6 +3,7 @@ html,
 #header,
 form.wufoo,
 form li.section h3,
+.wufoo .section h3,
 form li.section div {
   background: transparent;
   border: none;
@@ -666,6 +667,8 @@ input.text, input.search, input.file, textarea.textarea, select.select {
 
 input.text, input.search, textarea.textarea {
   border: #eee 1px solid; }
+  input.text:focus, input.text:active, input.search:focus, input.search:active, textarea.textarea:focus, textarea.textarea:active {
+    border-color: #a36338; }
 
 input[type="submit"] {
   color: #1c1d1d;
