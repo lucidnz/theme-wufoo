@@ -3,9 +3,10 @@ $include_fluid_type: false;
 
 $breakpoint_sm: 48em;
 
+$font_family_sans_serif: "Open Sans","HelveticaNeue","Helvetica Neue",sans-serif;
 $font_family_serif: Baskerville,"Baskerville Old Face","Hoefler Text",Garamond,"Times New Roman",serif;
-$font_family_body: $font_family_serif;
-$font_family_headings: $font_family_serif;
+$font_family_body: $font_family_sans_serif;
+$font_family_headings: $font_family_sans_serif;
 
 $highlight_color: #a36338;
 $text_color: #1c1d1d;
@@ -13,7 +14,7 @@ $focus_bg: #e5e6e7; //#fff7c0;
 $required_color: red;
 $instruct_bg: lighten(#eee, 5%);
 
-$border_radius: 0;
+$border_radius: 2px;
 
 $background_color_button_primary: #d8d9da;
 $background_hover_color_button_primary: lighten(#d8d9da, 10%);

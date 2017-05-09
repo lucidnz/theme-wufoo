@@ -11,7 +11,7 @@ select {
 }
 
 input.text, input.search, input.file, textarea.textarea, select.select {
-  padding: $gutter_horizontal/4 $gutter_vertical/2
+  padding: $gutter_horizontal/2 $gutter_vertical; //$gutter_horizontal/4 $gutter_vertical/2;
 }
 
 input.text, input.search, textarea.textarea {
@@ -20,4 +20,8 @@ input.text, input.search, textarea.textarea {
   &:active {
     border-color: $highlight_color;
   }
+}
+
+input[type=text], input[class~=text], input[type=email], input[type=password], input[type=url], input[type=tel], input[type=text], input[class~=text], input[type=number], input[type=search], input[type=time], input[type=week], input[type=month], input[type=date], input[type=datetime], input[type=datetime-local], textarea {
+  font-size: 1em;
 }
