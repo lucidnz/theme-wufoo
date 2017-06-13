@@ -136,12 +136,12 @@ svg {
 
 ::-moz-selection {
   color: #000;
-  background: rgba(163, 99, 56, 0.6);
+  background: rgba(237, 219, 205, 0.6);
   text-shadow: none; }
 
 ::selection {
   color: #000;
-  background: rgba(163, 99, 56, 0.6);
+  background: rgba(237, 219, 205, 0.6);
   text-shadow: none; }
 
 body {
@@ -149,7 +149,7 @@ body {
   line-height: 1.5;
   font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", sans-serif;
   font-weight: 300;
-  color: #1c1d1d;
+  color: #000;
   transition: font-size 0.3s; }
 
 h1,
@@ -215,7 +215,7 @@ a {
   background-position: 0 95%;
   background-size: 100% 1px; }
   a:hover, a:active {
-    color: #a36338;
+    color: #eddbcd;
     /* 
     Arbitrary webkit-only property that forces a redraw
     Fixes currentColor bug
@@ -228,12 +228,12 @@ a {
 a:focus {
   outline: none;
   color: #000;
-  background: rgba(163, 99, 56, 0.3);
-  box-shadow: 0 0 0 0.2em rgba(163, 99, 56, 0.3);
+  background: rgba(237, 219, 205, 0.3);
+  box-shadow: 0 0 0 0.2em rgba(237, 219, 205, 0.3);
   text-shadow: none; }
 
 figure > a:focus {
-  outline-color: rgba(163, 99, 56, 0.3); }
+  outline-color: rgba(237, 219, 205, 0.3); }
 
 h1 a,
 h2 a,
@@ -311,7 +311,7 @@ input[type=checkbox],
 input[type=radio],
 textarea,
 select {
-  color: rgba(28, 29, 29, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   border: #eee 1px solid;
   border-radius: 2px;
   outline: none;
@@ -335,9 +335,9 @@ select {
   input[type=radio]:focus,
   textarea:focus,
   select:focus {
-    color: #1c1d1d;
-    border-color: #a36338;
-    box-shadow: 0 0 6px rgba(163, 99, 56, 0.6); }
+    color: #000;
+    border-color: #eddbcd;
+    box-shadow: 0 0 6px rgba(237, 219, 205, 0.6); }
 
 input[type=text], input[class~=text],
 input[type=email],
@@ -386,9 +386,9 @@ input[type=radio] {
 
 input[type=file]:focus {
   outline: none;
-  color: #1c1d1d;
-  border-color: #a36338;
-  box-shadow: 0 0 6px rgba(163, 99, 56, 0.6); }
+  color: #000;
+  border-color: #eddbcd;
+  box-shadow: 0 0 6px rgba(237, 219, 205, 0.6); }
 
 input[type=button],
 input[type=reset],
@@ -423,7 +423,7 @@ button {
   input[type=submit]:active,
   button:hover,
   button:active {
-    color: #a36338;
+    color: #eddbcd;
     cursor: pointer; }
   input[type=button]:focus,
   input[type=reset]:focus,
@@ -431,7 +431,7 @@ button {
   button:focus {
     outline: none;
     background: inherit;
-    box-shadow: 0 0 0 0.2em rgba(163, 99, 56, 0.3); }
+    box-shadow: 0 0 0 0.2em rgba(237, 219, 205, 0.3); }
 
 figure * + * {
   margin-top: 0.5rem; }
@@ -450,7 +450,7 @@ figure > a:hover + figcaption h4 a,
 figure > a:hover + figcaption h5 a,
 figure > a:hover + figcaption h6 a,
 figure > a:hover + figcaption a {
-  color: #a36338;
+  color: #eddbcd;
   /* 
     Arbitrary webkit-only property that forces a redraw
     Fixes currentColor bug
@@ -686,19 +686,19 @@ input.text, input.search, input.file, textarea.textarea, select.select {
   padding: 0.5rem 1em; }
 
 input.text, input.search, textarea.textarea {
-  border: #eee 1px solid; }
+  border: #eee 1px solid !important; }
   input.text:focus, input.text:active, input.search:focus, input.search:active, textarea.textarea:focus, textarea.textarea:active {
-    border-color: #a36338; }
+    border-color: #eddbcd; }
 
 input[type=text], input[class~=text], input[class~=text], input[type=email], input[type=password], input[type=url], input[type=tel], input[type=text], input[class~=text], input[class~=text], input[type=number], input[type=search], input[type=time], input[type=week], input[type=month], input[type=date], input[type=datetime], input[type=datetime-local], textarea {
   font-size: 1em; }
 
 input[type="submit"] {
-  color: #1c1d1d;
+  color: #000;
   background-color: #d8d9da;
   border-color: #cbccce; }
   input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
-    color: #1c1d1d;
+    color: #000;
     background-color: #f2f3f3;
     border-color: #b1b3b5; }
 
@@ -729,5 +729,5 @@ form .instruct {
       margin: 0; } }
 
 .focused {
-  background-color: #e5e6e7 !important; }
+  background-color: #fff !important; }
 

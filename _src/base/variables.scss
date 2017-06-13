@@ -8,9 +8,9 @@ $font_family_serif: Baskerville,"Baskerville Old Face","Hoefler Text",Garamond,"
 $font_family_body: $font_family_sans_serif;
 $font_family_headings: $font_family_sans_serif;
 
-$highlight_color: #a36338;
-$text_color: #1c1d1d;
-$focus_bg: #e5e6e7; //#fff7c0;
+$highlight_color: #eddbcd; //#a36338;
+$text_color: #000; //#1c1d1d;
+$focus_bg: #fff; //#e5e6e7; //#fff7c0;
 $required_color: red;
 $instruct_bg: lighten(#eee, 5%);
 
