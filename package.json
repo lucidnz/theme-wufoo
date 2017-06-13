@@ -4,7 +4,7 @@
   "description": "Theme kit for Wufoo forms by Lucid",
   "main": "index.html",
   "scripts": {
-    "build": "parallelshell 'npm run sync' 'npm run css:watch'",
+    "build": "npm-run-all --parallel sync css:watch",
     "sync": "browser-sync start -s --files './css' './index.html'",
     "css:watch": "watch 'npm run css' ./_src/",
     "css": "node-sass ./_src/styles.scss | postcss --use autoprefixer -o ./css/styles.css",
@@ -28,7 +28,7 @@
     "browser-sync": "^2.13.0",
     "cssmin": "^0.4.3",
     "node-sass": "^3.8.0",
-    "parallelshell": "^2.0.0",
+    "npm-run-all": "^4.0.2",
     "postcss-cli": "^2.5.2",
     "watch": "^0.19.1"
   }

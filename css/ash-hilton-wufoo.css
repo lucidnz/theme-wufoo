@@ -150,6 +150,7 @@ body {
   font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", sans-serif;
   font-weight: 300;
   color: #1c1d1d;
+  -webkit-transition: font-size 0.3s;
   transition: font-size 0.3s; }
 
 h1,
@@ -208,8 +209,10 @@ hr {
 
 a {
   color: inherit;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   text-decoration: none;
+  background-image: -webkit-linear-gradient(left, currentColor 0%, currentColor 100%);
   background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
   background-repeat: repeat-x;
   background-position: 0 95%;
@@ -315,6 +318,7 @@ select {
   border: #eee 1px solid;
   border-radius: 2px;
   outline: none;
+  -webkit-transition: 0.3s;
   transition: 0.3s; }
   input[type=text]:focus, input[class~=text]:focus,
   input[type=email]:focus,
@@ -410,6 +414,7 @@ button {
   border-style: solid;
   border-width: 1px;
   border-radius: 2px;
+  -webkit-transition: 0.3s;
   transition: 0.3s; }
   input[type=button] svg,
   input[type=reset] svg,
